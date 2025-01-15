@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nohut">
+
+    <!-- Başlık -->
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Etsiz Nohut Yemeği Tarifi İçin Malzemeler"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Etsiz Nohut Yemeği Tarifi İçin Malzemeler başlığı" />
+
+    <!-- Malzeme Listesi -->
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="• 2 su bardağı nohut\n• 1 adet kuru soğan\n• 2 adet yeşil biber\n• 5 yemek kaşığı sıvı yağ\n• 1,5 yemek kaşığı domates salçası\n• 1 tatlı kaşığı biber salçası\n• 1 tatlı kaşığı tuz\n• Yarım çay kaşığı karabiber\n• Yarım çay kaşığı pul biber\n• 1 çay kaşığı kimyon\n• 5 su bardağı sıcak su"
+        android:textSize="16sp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Etsiz Nohut yemeği için malzeme listesi" />
+
+    <!-- Yapılış Başlığı -->
+    <TextView
+        android:id="@+id/how_to_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Etsiz Nohut Nasıl Yapılır?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/ingredients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:importantForAccessibility="yes"
+        android:contentDescription="Etsiz Nohut Nasıl Yapılır başlığı" />
+
+    <!-- Yapılış Adımları -->
+    <TextView
+        android:id="@+id/steps"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:contentDescription="Etsiz Nohut yemeği yapılış adımları"
+        android:importantForAccessibility="yes"
+        android:text="1. Nohutları bir gece önceden suda bekletin.\n2. Soğanı yemeklik doğrayıp sıvı yağda kavurun.\n3. Biberleri doğrayıp ekleyin ve karıştırın.\n4. Domates salçası, biber salçası ve baharatları ekleyin.\n5. Nohutları ekleyin, sıcak suyu ilave edin.\n6. Tuz ve şeker ekleyip karıştırın ve kısık ateşte pişirin.\n7. Nohutlar piştikten sonra servis yapın. Afiyet olsun!"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.727"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/how_to_title"
+        app:layout_constraintVertical_bias="0.093" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
